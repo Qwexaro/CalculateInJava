@@ -10,4 +10,6 @@ public class Main {
     public static void updateNumber(Calcultor currentNumber) {
         currentNumber.setFirstNumber(85);
     }
+
+    // new oblast' pamyati not creating
 }
