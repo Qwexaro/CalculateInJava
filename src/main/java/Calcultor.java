@@ -17,4 +17,13 @@ public class Calcultor {
         Calcultor calcultor = new Calcultor(num1, num2, num3);
         return calcultor.multiply();
     }
+
+    @Override
+    public String toString() {
+        return "Calcultor{" +
+                "firstNumber=" + firstNumber +
+                ", secondNumber=" + secondNumber +
+                ", thirdNumber=" + thirdNumber +
+                '}';
+    }
 }
