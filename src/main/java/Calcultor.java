@@ -13,9 +13,14 @@ public class Calcultor {
         return firstNumber * secondNumber * thirdNumber;
     }
 
-    public static int calculate(int num1, int num2, int num3) {
-        Calcultor calcultor = new Calcultor(num1, num2, num3);
-        return calcultor.multiply();
+    public static Calcultor calculate(int num1, int num2, int num3) {
+        Calcultor calculateIvanov = new Calcultor(num1, num2, num3);
+        System.out.println("Hash code is inside object: " + calculateIvanov.hashCode());
+        return calculateIvanov;
+    }
+
+    public void setFirstNumber(int firstNumber) {
+        this.firstNumber = firstNumber;
     }
 
     @Override
