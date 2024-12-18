@@ -9,7 +9,12 @@ public class Calcultor {
         this.thirdNumber = thirdNumber;
     }
 
-    public int multiply(){
+    public int multiply() {
         return firstNumber * secondNumber * thirdNumber;
+    }
+
+    public static int calculate(int num1, int num2, int num3) {
+        Calcultor calcultor = new Calcultor(num1, num2, num3);
+        return calcultor.multiply();
     }
 }
